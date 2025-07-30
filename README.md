@@ -14,7 +14,7 @@ An article can fall under multiple categories. So this problem cannot be conside
 ## Approach
 The approach was to use a pretrained SLM (Small Language Model) as a multilabel classifier. The model chosen for this purpose was BioClinical-ModernBERT-base. It builds on ModernBERT to adapt to domain-specific data. It is trained on the largest biomedical and clinical corpus to date, with over 53.5 billion tokens. It incorporates long-context processing (upto 8192 tokens) and has a significant increase in performance for bioclinical NLP tasks.
 
-
+The idea was to create a pipeline involving separate Jupyter notebooks for each major step in training the model. This means one notebook for preprocessing, one for training and one for evaluation.
 
 
 
