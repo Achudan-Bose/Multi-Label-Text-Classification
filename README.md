@@ -1,4 +1,4 @@
-# Multi-Label-Text-Classification
+# Multi-Label-Text-Classification of PubMed Articles
 
 Link to Dataset: [PubMed Multi-Label Text Classification](https://www.kaggle.com/datasets/owaiskhan9654/pubmed-multilabel-text-classification)
 
