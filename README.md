@@ -18,7 +18,11 @@ The idea was to create a pipeline consisting of separate Jupyter notebooks for e
 I used Google Colab to utilize the T4 GPU it provides for training. It also makes it easier to link to Google Drive, so that outputs from each notebook can be saved and used by other notebooks seamlessly.
 
 ### Preprocessing
-Some additional preprocessing was required such as deleting duplicate rows and removing articles with no labels. The dataset was split into train and test data in an 80:20 split. A new column was created (in both training and test data) which was the one hot encoded values of the 14 labels as a single list. This was going to be the column to be predicted. abstractText is tokenized, then input IDs, labels and attention masks are split into train and validation data in an 80:20 split. input IDs, labels and attention masks are stored as pytorch tensors in a tensor dataset. The 3 tensor datasets (train, validation, test) are saved in Google Drive to be used by the training and validation notebooks.
+- Some additional preprocessing was required such as deleting duplicate rows and removing articles with no labels.
+- The dataset was split into train and test data in an 80:20 split.
+- A new column was created (in both training and test data) which was the one hot encoded values of the 14 labels as a single list. This was going to be the column to be predicted. 
+- abstractText is tokenized, then input IDs, labels and attention masks are split into train and validation data in an 80:20 split. 
+- input IDs, labels and attention masks are stored as pytorch tensors in a tensor dataset. The 3 tensor datasets (train, validation, test) are saved in Google Drive to be used by the training and validation notebooks.
 
 ### Training
 
